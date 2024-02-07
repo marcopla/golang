@@ -3,9 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
 	"reflect"
+	"strings"
 	"time"
 )
 
@@ -15,6 +17,7 @@ const delay = 3
 func main() {
 
 	exibeIntroducao()
+
 	for {
 		exibeMenu()
 
@@ -54,7 +57,7 @@ func leComando() int {
 	//fmt.Scanf("%d", &comandoLido)
 	fmt.Scan(&comandoLido)
 	fmt.Println("O comando escolhido foi:", comandoLido)
-	fmt.Println("")
+	//fmt.Println("")
 	return comandoLido
 }
 
@@ -95,10 +98,14 @@ func leSitesDoArquivo() []string {
 		fmt.Println("Ocorreu o erro:", err)
 	}
 	leitor := bufio.NewReader(arquivo)
-	linha, err := leitor.ReadString('\n')
-	if err != nil {
-		fmt.Println("Ocorreu o erro:", err)
+	for {
+		linha, err := leitor.ReadString('\n')
+		linha = strings.TrimSpace(linha)
+		sites = append(sites, linha)
+		if err == io.EOF {
+			break
+		}
 	}
-	fmt.Println(linha)
+	arquivo.Close()
 	return sites
 }
