@@ -18,6 +18,8 @@ func main() {
 
 	exibeIntroducao()
 
+	registraLog("site-falso", false)
+
 	for {
 		exibeMenu()
 
@@ -36,7 +38,6 @@ func main() {
 			os.Exit(-1)
 		}
 	}
-
 }
 
 func exibeIntroducao() {
@@ -47,11 +48,13 @@ func exibeIntroducao() {
 	fmt.Println("Este software está na versão:", versao)
 	fmt.Println("O tipo da variável é: ", reflect.TypeOf(versao))
 }
+
 func exibeMenu() {
 	fmt.Println("1 - Iniciar monitoramento")
 	fmt.Println("2 - Exibir Logs")
 	fmt.Println("0 - Sair do programa")
 }
+
 func leComando() int {
 	var comandoLido int
 	//fmt.Scanf("%d", &comandoLido)
@@ -75,7 +78,6 @@ func iniciaMonitoramento() {
 		time.Sleep(delay * time.Second)
 		fmt.Println("")
 	}
-
 }
 
 func testaSite(site string) {
@@ -85,8 +87,10 @@ func testaSite(site string) {
 	}
 	if resp.StatusCode == 200 {
 		fmt.Println("O site:", site, "está on")
+		registraLog(site, true)
 	} else {
 		fmt.Println("O site:", site, "está com problemas. Status code:", resp.StatusCode)
+		registraLog(site, false)
 	}
 }
 
@@ -108,4 +112,15 @@ func leSitesDoArquivo() []string {
 	}
 	arquivo.Close()
 	return sites
+}
+
+func registraLog(site string, status bool) {
+
+	arquivo, err := os.OpenFile("log.txt", os.O_RDWR|os.O_CREATE, 0666)
+
+	if err != nil {
+		fmt.Println("Ocorreu o erro:", err)
+	}
+
+	fmt.Println(arquivo)
 }
