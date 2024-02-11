@@ -1,30 +1,18 @@
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
-http://random-status-code.herokuapp.com/- online: false
-http://alura.com.br- online: true
-http://caelum.com.br- online: true
+11/02/2024 15:01:13 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:01:14 - http://alura.com.br - online: true
+11/02/2024 15:01:18 - http://caelum.com.br - online: true
+11/02/2024 15:01:22 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:01:22 - http://alura.com.br - online: true
+11/02/2024 15:01:24 - http://caelum.com.br - online: true
+11/02/2024 15:01:27 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:01:28 - http://alura.com.br - online: true
+11/02/2024 15:01:29 - http://caelum.com.br - online: true
+11/02/2024 15:01:33 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:01:33 - http://alura.com.br - online: true
+11/02/2024 15:01:37 - http://caelum.com.br - online: true
+11/02/2024 15:01:41 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:01:41 - http://alura.com.br - online: true
+11/02/2024 15:01:43 - http://caelum.com.br - online: true
+11/02/2024 15:03:10 - http://random-status-code.herokuapp.com/ - online: false
+11/02/2024 15:03:10 - http://alura.com.br - online: true
+11/02/2024 15:03:12 - http://caelum.com.br - online: true
